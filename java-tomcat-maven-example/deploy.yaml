@@ -4,7 +4,7 @@
   tasks:
     - name: deploy dependency app
       copy:
-        src: /var/lib/jenkins/workspace/pipeline-cicd-workflow-full/java-tomcat-maven-example/target/dependency/webapp-runnner.jar
+        src: /var/lib/jenkins/workspace/pipeline-cicd-workflow-full/java-tomcat-maven-example/target/dependency/webapp-runner.jar
         dest: /home/ansible/
     - name: deploy application
       copy:

@@ -4,10 +4,10 @@
     - name: deploy dependency app
       copy:
         src: /var/lib/jenkins/workspace/final-pipeline/java-tomcat-maven-example/target/dependency/webapp-runner.jar
-        dest: /home/ansible/
+        dest: /home/jenkins/
     - name: deploy application
       copy:
         src: /var/lib/jenkins/workspace/final-pipeline/java-tomcat-maven-example/target/java-tomcat-maven-example.war
-        dest: /home/ansible/
+        dest: /home/jenkins/
     - name: start the app
       shell: 'nohup java -jar /home/ansible/*.jar /home/ansible/*.war &'

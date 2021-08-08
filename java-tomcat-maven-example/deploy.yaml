@@ -1,6 +1,5 @@
 ---
 - hosts: target
-  become: true
   tasks:
     - name: deploy dependency app
       copy:
